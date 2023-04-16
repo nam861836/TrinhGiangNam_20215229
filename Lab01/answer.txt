@@ -1,2 +1,0 @@
-Ex 6.2:
-- If users choose “Cancel”, the pop up will say "NO"
