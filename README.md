@@ -1,2 +1,3 @@
-# Trinh Giang Nam 20215229
+# OOP Lab
+Trinh Giang Nam 20215229
 
