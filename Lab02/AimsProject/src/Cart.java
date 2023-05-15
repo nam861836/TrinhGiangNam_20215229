@@ -89,6 +89,29 @@ public class Cart {
         System.out.println("***************************************************");
     }
 
+    public void searchByID(int id) {
+        for (int i = 0; i < qtyOrdered; i++) {
+            if (itemsOrdered[i].getId() == id) {
+                System.out.println("The disc with ID " + id + " is in the cart:");
+                System.out.println(itemsOrdered[i].toString());
+                return;
+            }
+        }
+        System.out.println("No disc with ID " + id + " found in the cart.");
+    }
+
+    public void searchByTitle(String title) {
+
+        for (int i = 0; i < qtyOrdered; i++) {
+            if (itemsOrdered[i].isMatch(title)) {
+                System.out.println("Search results for discs with title " + title + ":");
+                System.out.println(itemsOrdered[i].toString());
+                return;
+            }
+        }
+        System.out.println("No discs with title " + title + " found in the cart.");
+    }
+
 
 
 }

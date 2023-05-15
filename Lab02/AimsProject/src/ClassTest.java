@@ -11,5 +11,9 @@ public class ClassTest {
         cart.addDigitalVideoDisc(dvd3);
 
         cart.print();
+        cart.searchByID(1);
+        cart.searchByTitle("Star Wars");
+        cart.searchByID(4);
+        cart.searchByTitle("Aladin");
     }
 }
