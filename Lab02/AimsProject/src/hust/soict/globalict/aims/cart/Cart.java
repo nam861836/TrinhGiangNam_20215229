@@ -1,3 +1,6 @@
+package hust.soict.globalict.aims.cart;
+
+import hust.soict.globalict.aims.disc.DigitalVideoDisc;
 
 public class Cart {
     private final int MAX_NUMBERS_ORDERED = 20;
@@ -14,7 +17,7 @@ public class Cart {
         }
     }
 
-    public void addDigitalVideoDisc(DigitalVideoDisc [] dvdList){
+    public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList){
         for (DigitalVideoDisc dvd : dvdList) {
             if (qtyOrdered >= MAX_NUMBERS_ORDERED) {
                 System.out.println("The cart is already full.");
@@ -26,7 +29,7 @@ public class Cart {
         }
     }
 /*
-    public void addDigitalVideoDisc(DigitalVideoDisc... dvds) {
+    public void addDigitalVideoDisc(hust.soict.globalict.aims.disc.DigitalVideoDisc... dvds) {
         int numToAdd = dvds.length;
         if (qtyOrdered + numToAdd > MAX_NUMBERS_ORDERED) {
             System.out.println("The cart is already full.");
@@ -39,7 +42,7 @@ public class Cart {
         }
     }
 */
-    public void addDigitalVideoDisc(DigitalVideoDisc dvd1,DigitalVideoDisc dvd2){
+    public void addDigitalVideoDisc(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2){
         if (qtyOrdered + 2 > MAX_NUMBERS_ORDERED) {
             System.out.println("The cart is already full.");
             return;
@@ -82,7 +85,7 @@ public class Cart {
         System.out.println("***********************CART***********************");
         System.out.println("Ordered Items: ");
         for (int i = 0; i < qtyOrdered; i++) {
-            //DigitalVideoDisc dvd = itemsOrdered[i];
+            //hust.soict.globalict.aims.disc.DigitalVideoDisc dvd = itemsOrdered[i];
             System.out.println((i + 1) + ". " + itemsOrdered[i].toString());
         }
         System.out.printf("Total cost: %.2f\n", totalCost());

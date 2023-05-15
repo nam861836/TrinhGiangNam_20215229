@@ -1,3 +1,7 @@
+package hust.soict.globalict.aims.store;
+
+import hust.soict.globalict.aims.disc.DigitalVideoDisc;
+
 public class Store {
     private final int MAX_NUMBERS_ORDERED = 100;
     private DigitalVideoDisc[] itemsInStore = new DigitalVideoDisc[MAX_NUMBERS_ORDERED];
