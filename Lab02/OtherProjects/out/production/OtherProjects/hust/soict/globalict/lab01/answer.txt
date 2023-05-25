@@ -1,0 +1,4 @@
+Ex 6.1:
+- If users choose "Cancel", the box will say "You've chose: NO"
+- If we want to customize the options into two options only, we should add a title to the box and add JOptionPane.YES_NO_OPTION after the title
+example: int option = JOptionPane.showConfirmDialog(null, "Do you want to change to the first class ticket?", "Booking tickets", JOptionPane.YES_NO_OPTION);
