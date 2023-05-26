@@ -1,6 +1,6 @@
 package hust.soict.globalict.aims.cart;
 
-import hust.soict.globalict.aims.disc.DigitalVideoDisc;
+import hust.soict.globalict.aims.media.DigitalVideoDisc;
 
 public class Cart {
     private final int MAX_NUMBERS_ORDERED = 20;
@@ -29,7 +29,7 @@ public class Cart {
         }
     }
 /*
-    public void addDigitalVideoDisc(hust.soict.globalict.aims.disc.DigitalVideoDisc... dvds) {
+    public void addDigitalVideoDisc(hust.soict.globalict.aims.media.DigitalVideoDisc... dvds) {
         int numToAdd = dvds.length;
         if (qtyOrdered + numToAdd > MAX_NUMBERS_ORDERED) {
             System.out.println("The cart is already full.");
@@ -85,7 +85,7 @@ public class Cart {
         System.out.println("***********************CART***********************");
         System.out.println("Ordered Items: ");
         for (int i = 0; i < qtyOrdered; i++) {
-            //hust.soict.globalict.aims.disc.DigitalVideoDisc dvd = itemsOrdered[i];
+            //hust.soict.globalict.aims.media.DigitalVideoDisc dvd = itemsOrdered[i];
             System.out.println((i + 1) + ". " + itemsOrdered[i].toString());
         }
         System.out.printf("Total cost: %.2f\n", totalCost());
