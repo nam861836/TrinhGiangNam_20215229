@@ -9,6 +9,27 @@ public class Book extends Media {
     public Book() {
     }
 
+    public Book(String title, float cost) {
+        super();
+        this.setTitle(title);
+        this.setCost(cost);
+    }
+
+    public Book(String title, String category, float cost) {
+        super();
+        this.setTitle(title);
+        this.setTitle(category);
+        this.setCost(cost);
+    }
+
+    public Book(String title, String category, String author, float cost) {
+        super(title, category, cost);
+    }
+
+    public ArrayList<String> getAuthors() {
+        return authors;
+    }
+
     public void addAuthor(String authorName) {
         if (!authors.contains(authorName)) {
             authors.add(authorName);
@@ -27,4 +48,16 @@ public class Book extends Media {
         }
     }
 
+    public String toString() {
+        return "Book: " + getTitle() + " - " + getCategory() + " - " + getAuthors() + " - "  + getCost() + " $";
+    }
+    @Override
+    public void display(){
+        System.out.println("Title: " + this.getTitle());
+        System.out.println("Authors: ");
+        for (String author : authors)
+        System.out.println(author);
+
+        System.out.println("Cost: " + this.getCost());
+    }
 }

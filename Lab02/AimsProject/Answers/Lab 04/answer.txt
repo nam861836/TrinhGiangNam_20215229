@@ -1,0 +1,12 @@
+10. 
+- If the passing object is not an instance of Media, what happens?
+Answer: We should return false from the equals() method.
+12.
+- What class should implement the Comparable interface?
+Answer: The Media class
+- In those classes, how should you implement the compareTo()method be to reflect the ordering that we want?
+Answer: To reflect the desired ordering, you should implement the compareTo() method in the class implementing the Comparable interface. The compareTo() method should compare the current object with the specified object and return a negative integer, zero, or a positive integer based on the comparison result.
+- Can we have two ordering rules of the item (by title then cost and by cost then title) if we use this Comparable interface approach?
+Answer: No, with the Comparable interface, we can only define one natural ordering for the objects.
+- Suppose the DVDs has a different ordering rule from the other media types, that is by title, then decreasing length, then cost. How would you modify your code to allow this?
+Answer: To allow the DVDs to have a different ordering rule, you can create a separate Comparator specifically for DVDs. In the Media class, you can override the compareTo() method to handle the ordering for other media types, and for DVDs, you can provide a separate Comparator implementation. This way, you can have different ordering rules for DVDs and other media types.
