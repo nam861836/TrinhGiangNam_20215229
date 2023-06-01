@@ -9,46 +9,6 @@ import java.util.Scanner;
 public class Aims {
     private static Store store = new Store();
     private static Cart cart = new Cart();
-    public static void main(String[] args){
-        store = new Store();
-        cart = new Cart();
-
-        DigitalVideoDisc dvd = new DigitalVideoDisc("The Lion King", "Animation", "Roger Allers", 87, 19.95f);
-        Book book = new Book("Calculus", "Science",null, 6.9f);
-        CompactDisc cd = new CompactDisc("Let it be", "Rock", 10.9f, 86, "The Beatles");
-        book.addAuthor("James Steward");
-        store.addMedia(dvd);
-        store.addMedia(book);
-        store.addMedia(cd);
-
-        Scanner scanner = new Scanner(System.in);
-        int choice = -1;
-        while (choice != 0) {
-            showMenu();
-            choice = scanner.nextInt();
-            scanner.nextLine();
-
-            switch (choice) {
-                case 1:
-                    viewStore();
-                    break;
-                case 2:
-                    updateStore();
-                    break;
-                case 3:
-                    seeCart();
-                    break;
-                case 0:
-                    System.out.println("Exiting the program. Goodbye!");
-                    break;
-                default:
-                    System.out.println("Invalid choice. Please try again.");
-                    break;
-            }
-            System.out.println();
-
-        }
-    }
 
     public static void showMenu() {
         System.out.println("AIMS:");
@@ -71,7 +31,6 @@ public class Aims {
             storeMenu();
             choice = scanner.nextInt();
 
-
             switch (choice) {
                 case 1:
                     seeMediaDetails();
@@ -86,7 +45,6 @@ public class Aims {
                     seeCart();
                     break;
                 case 0:
-                    System.out.println("Exiting the program. Goodbye!");
                     break;
                 default:
                     System.out.println("Invalid choice. Please try again.");
@@ -124,11 +82,7 @@ public class Aims {
                     cart.addMedia(media);
                     break;
                 case 2:
-                    if (media instanceof Playable) {
-                        ((Playable) media).play();
-                    } else {
-                        System.out.println("This media is not playable.");
-                    }
+                    playable(media);
                     break;
                 case 0:
                     break;
@@ -138,6 +92,11 @@ public class Aims {
         } else {
             System.out.println("Media not found.");
         }
+    }
+
+    public static void playable(Media media){
+        if (media instanceof Playable) ((Playable) media).play();
+        else System.out.println("This media is not playable.");
     }
 
     public static void mediaDetailsMenu() {
@@ -237,23 +196,20 @@ public class Aims {
         System.out.println("2. Title");
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
-        scanner.nextLine(); // Consume newline character
+        scanner.nextLine();
 
-        switch (choice) {
-            case 1:
-                System.out.println("Enter the ID: ");
-                int id = scanner.nextInt();
-                scanner.nextLine();
-                cart.filterMediaByID(id);
-                break;
-            case 2:
-                System.out.println("Enter the title: ");
-                String title = scanner.nextLine();
-                cart.filterByTitle(title);
-                break;
-            default:
-                System.out.println("Invalid choice. Please try again.");
-        }
+        if (choice == 1) {
+            System.out.println("Enter the ID: ");
+            int id = scanner.nextInt();
+            scanner.nextLine();
+            cart.filterMediaByID(id);
+
+        } else if (choice == 2) {
+            System.out.println("Enter the title: ");
+            String title = scanner.nextLine();
+            cart.filterByTitle(title);
+
+        } else System.out.println("Invalid choice. Please try again.");
     }
 
     public static void sortCart(){
@@ -262,18 +218,11 @@ public class Aims {
         System.out.println("2. Cost");
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
-        scanner.nextLine(); // Consume newline character
+        scanner.nextLine();
 
-        switch (choice) {
-            case 1:
-                cart.sortByTitle();
-                break;
-            case 2:
-                cart.sortByCost();
-                break;
-            default:
-                System.out.println("Invalid choice. Please try again.");
-        }
+        if (choice == 1) cart.sortByTitle();
+        else if (choice == 2) cart.sortByCost();
+        else System.out.println("Invalid choice. Please try again.");
     }
 
     public static void removeMediaFromCart() {
@@ -322,5 +271,49 @@ public class Aims {
         System.out.println("Please choose a number: 0-1-2");
     }
 
+    public static void addMedia(){
+        store = new Store();
+        cart = new Cart();
+        DigitalVideoDisc dvd = new DigitalVideoDisc("The Lion King", "Animation", "Roger Allers", 87, 19.95f);
+        Book book = new Book("Calculus", "Science",null, 6.9f);
+        CompactDisc cd = new CompactDisc("Let it be", "Rock", 10.9f, 86, "The Beatles");
+        book.addAuthor("James Steward");
+        store.addMedia(dvd);
+        store.addMedia(book);
+        store.addMedia(cd);
+    }
+
+    public static void run(){
+        Scanner scanner = new Scanner(System.in);
+        int choice = -1;
+        while (choice != 0) {
+            showMenu();
+            choice = scanner.nextInt();
+            scanner.nextLine();
+
+            switch (choice) {
+                case 1:
+                    viewStore();
+                    break;
+                case 2:
+                    updateStore();
+                    break;
+                case 3:
+                    seeCart();
+                    break;
+                case 0:
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+                    break;
+            }
+            System.out.println();
+
+        }
+    }
+    public static void main(String[] args){
+        addMedia();
+        run();
+    }
 }
 

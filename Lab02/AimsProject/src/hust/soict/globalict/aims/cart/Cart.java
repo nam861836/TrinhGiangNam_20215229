@@ -58,7 +58,7 @@ public class Cart {
             //hust.soict.globalict.aims.media.DigitalVideoDisc dvd = itemsOrdered[i];
             System.out.println((i + 1) + ". " + itemsOrdered.get(i).toString());
         }
-        System.out.printf("Total cost: %.2f\n", totalCost());
+        System.out.printf("Total cost: %.2f $\n", totalCost());
         System.out.println("***************************************************");
     }
 
