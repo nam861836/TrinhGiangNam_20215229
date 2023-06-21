@@ -70,4 +70,3 @@ public class NumberGrid extends JFrame {
         new NumberGrid();
     }
 }
-

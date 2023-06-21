@@ -10,6 +10,18 @@ import java.util.ArrayList;
 public class StoreScreen extends JFrame {
     private Store store;
 
+    public StoreScreen(Store store){
+        this.store = store;
+        Container cp = getContentPane();
+        cp.setLayout(new BorderLayout());
+
+        cp.add(createNorth(), BorderLayout.NORTH);
+        cp.add(createCenter(), BorderLayout.CENTER);
+
+        setVisible(true);
+        setTitle("Store");
+        setSize(1024, 768);
+    }
     JPanel createNorth(){
         JPanel north = new JPanel();
         north.setLayout(new BoxLayout(north, BoxLayout.Y_AXIS));
@@ -48,6 +60,10 @@ public class StoreScreen extends JFrame {
         cart.setPreferredSize(new Dimension(100,50));
         cart.setMaximumSize(new Dimension(100 , 50));
 
+        JButton addToCart = new JButton("Add to cart");
+        addToCart.setPreferredSize(new Dimension(100, 50));
+        addToCart.setMaximumSize(new Dimension(100, 50));
+
         header.add(Box.createRigidArea(new Dimension(10, 10)));
         header.add(title);
         header.add(Box.createHorizontalGlue());
@@ -62,9 +78,10 @@ public class StoreScreen extends JFrame {
 
         ArrayList<Media> mediaInStore = store.getItemsInStore();
         for(int i = 0; i < 9; i++){
-            MediaStore Cell = new MediaStore(mediaInStore.get(i));
+            MediaStore cell = new MediaStore(mediaInStore.get(i));
             center.add(cell);
         }
         return center;
     }
+
 }

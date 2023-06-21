@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="325d0eea-76a3-4899-9802-9a4328f6d49f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AimsProject/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../AimsProject/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AimsProject/out/production/AimsProject/hust/soict/globalict/aims/Aims.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AimsProject/out/production/AimsProject/hust/soict/globalict/aims/Aims.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AimsProject/out/production/AimsProject/hust/soict/globalict/aims/store/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AimsProject/out/production/AimsProject/hust/soict/globalict/aims/store/Store.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AimsProject/src/hust/soict/globalict/aims/screen/MediaStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AimsProject/src/hust/soict/globalict/aims/screen/MediaStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AimsProject/src/hust/soict/globalict/aims/screen/StoreScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AimsProject/src/hust/soict/globalict/aims/screen/StoreScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUIProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GUIProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUIProject/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUIProject/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUIProject/hust/soict/globalict/swing/AWTAccumulator$TFInputListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUIProject/hust/soict/globalict/swing/AWTAccumulator$TFInputListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUIProject/hust/soict/globalict/swing/AWTAccumulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUIProject/hust/soict/globalict/swing/AWTAccumulator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUIProject/hust/soict/globalict/swing/NumberGrid$ButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUIProject/hust/soict/globalict/swing/NumberGrid$ButtonListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUIProject/hust/soict/globalict/swing/NumberGrid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUIProject/hust/soict/globalict/swing/NumberGrid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUIProject/hust/soict/globalict/swing/SwingAccumulator$TFInputListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUIProject/hust/soict/globalict/swing/SwingAccumulator$TFInputListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUIProject/hust/soict/globalict/swing/SwingAccumulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUIProject/hust/soict/globalict/swing/SwingAccumulator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/soict/globalict/swing/AWTAccumulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/globalict/swing/AWTAccumulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/soict/globalict/swing/NumberGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/globalict/swing/NumberGrid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/soict/globalict/swing/SwingAccumulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/globalict/swing/SwingAccumulator.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Tag Library Descriptor" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2RVqRa0XLXiPOJeLnwrmjTloC3W" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java/javafx-sdk-17.0.7/lib&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;shared-indexes&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.24534161&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.Painter">
+    <configuration name="Painter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="19" />
+      <option name="MAIN_CLASS_NAME" value="hust.soict.globalict.javafx.Painter" />
+      <module name="GUIProject" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;D:\Java\javafx-sdk-17.0.7\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hust.soict.globalict.javafx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwingAccumulator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hust.soict.globalict.swing.SwingAccumulator" />
+      <module name="GUIProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hust.soict.globalict.swing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Painter" />
+      <item itemvalue="Application.SwingAccumulator" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Painter" />
+        <item itemvalue="Application.SwingAccumulator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="325d0eea-76a3-4899-9802-9a4328f6d49f" name="Changes" comment="" />
+      <created>1687345590523</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687345590523</updated>
+      <workItem from="1687345591870" duration="1605000" />
+      <workItem from="1687347330819" duration="670000" />
+      <workItem from="1687348015873" duration="256000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

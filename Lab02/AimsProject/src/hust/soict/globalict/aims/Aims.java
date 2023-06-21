@@ -1,6 +1,7 @@
 package hust.soict.globalict.aims;
 
 import hust.soict.globalict.aims.cart.Cart;
+import hust.soict.globalict.aims.exception.PlayerException;
 import hust.soict.globalict.aims.media.*;
 import hust.soict.globalict.aims.store.Store;
 
@@ -21,7 +22,7 @@ public class Aims {
         System.out.println("Please choose a number: 0-1-2-3");
     }
 
-    public static void viewStore() {
+    public static void viewStore() throws PlayerException {
         System.out.println("----- ITEMS IN STORE -----");
         store.displayStore();
         System.out.println("--------------------------");
@@ -66,7 +67,7 @@ public class Aims {
         System.out.println("Please choose a number: 0-1-2-3-4");
     }
 
-    public static void seeMediaDetails() {
+    public static void seeMediaDetails() throws PlayerException {
         System.out.println("Enter the title: ");
         Scanner scanner = new Scanner(System.in);
         String title = scanner.nextLine();
@@ -94,7 +95,7 @@ public class Aims {
         }
     }
 
-    public static void playable(Media media){
+    public static void playable(Media media) throws PlayerException {
         if (media instanceof Playable) ((Playable) media).play();
         else System.out.println("This media is not playable.");
     }
@@ -126,7 +127,7 @@ public class Aims {
         }
     }
 
-    public static void play() {
+    public static void play() throws PlayerException {
         System.out.println("Enter the title:");
         Scanner scanner = new Scanner(System.in);
         String title = scanner.nextLine();
@@ -143,7 +144,7 @@ public class Aims {
         }
     }
 
-    public static void seeCart() {
+    public static void seeCart() throws PlayerException {
         cart.print();
         cartMenu();
         Scanner scanner = new Scanner(System.in);
@@ -275,15 +276,16 @@ public class Aims {
         store = new Store();
         cart = new Cart();
         DigitalVideoDisc dvd = new DigitalVideoDisc("The Lion King", "Animation", "Roger Allers", 87, 19.95f);
+        DigitalVideoDisc dvd2 = new DigitalVideoDisc("The Lion Queen", "Animation", "Steve Rogers", 95, 20.03f);
         Book book = new Book("Calculus", "Science",null, 6.9f);
-        CompactDisc cd = new CompactDisc("Let it be", "Rock", 10.9f, 86, "The Beatles");
+        //CompactDisc cd = new CompactDisc("Let it be", "Rock", 10.9f, 86, "The Beatles");
         book.addAuthor("James Steward");
         store.addMedia(dvd);
         store.addMedia(book);
-        store.addMedia(cd);
+        store.addMedia(dvd2);
     }
 
-    public static void run(){
+    public static void run() throws PlayerException {
         Scanner scanner = new Scanner(System.in);
         int choice = -1;
         while (choice != 0) {
@@ -311,7 +313,7 @@ public class Aims {
 
         }
     }
-    public static void main(String[] args){
+    public static void main(String[] args) throws PlayerException {
         addMedia();
         run();
     }

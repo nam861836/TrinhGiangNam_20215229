@@ -8,7 +8,8 @@ import java.util.ArrayList;
 public class Store {
     private final int MAX_NUMBERS_ORDERED = 100;
     private ArrayList<Media> itemsOrdered = new ArrayList<Media>();
-    //private int qty = 0;
+
+    private static Store instance;
     public void addMedia(Media media){
         if(itemsOrdered.size() >= MAX_NUMBERS_ORDERED){
             System.out.println("The store is already full.");
@@ -47,6 +48,17 @@ public class Store {
 
     public ArrayList<Media> getItemsInStore(){
         return itemsOrdered;
+    }
+
+    public static Store getInstance() {
+        if (instance == null) {
+            synchronized (Store.class) {
+                if (instance == null) {
+                    instance = new Store();
+                }
+            }
+        }
+        return instance;
     }
 
 }
